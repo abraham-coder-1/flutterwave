@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* p{
+    line-height: 1.5;
+    word-spacing: 0.1em;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif; ;
+ }
+ a{
+    text-decoration: none;
+    cursor:pointer ;
+    color: aqua;
+}
+a:visited{
+    color: blue;
+}
+a:hover{
+    color: rgb(43, 92, 226);
+    opacity: 0.9;
+}
+body
+   
+ol{
+    list-style-type: none ;
+    list-style-position: inside;
+}
+ul{
+    list-style-position: inside;
+}
+li{
+    padding-left: 2rem;
+}
+::marker{
+    color: black;
+    font-family: fantasy;
+    font-size: 1em;
+    
+}
+.opposite{
+    display: inline-block;
+    background-color: blueviolet;
+    color: whitesmoke;
+    width: 200px;
+    padding: 3rem;
+}
+p{
+    background-color: black;
+    color: whitesmoke;
+} */
+
+ /* CSSfloats */ 
+/*  .block{
+    width: 30vw;
+    height: 20vw;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+ }
+ .left{
+    float: left;
+    margin-right: 1rem;
+ }
+ .right{
+    float: right;
+    margin-left: 1rem;
+ }
+ .clear{
+    clear: both;
+ }
+ section{
+    background-color: bisque;
+    border:1px solid black ;
+    padding: 1rem;
+    height: 25vw;
+ }
+ */
+
+ /* columns */
+.column{
+    column-count: 4;
+    column-width: 250px;
+    columns: 250px;
+    column-rule: 3px solid black;
+ }

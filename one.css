@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    
+    font-family:"Roboto", sans-serif; 
+    
+    
+}
+ul{
+    list-style-type: none;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: rgb(138, 138, 89);
+}
+li{
+    display: inline-block;
+    margin-inline: 0.5rem;
+} 
+/*utility classes */
+.flex {
+  display: flex;
+  
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.flex-col {
+  flex-direction: column;
+}
+.w-full {
+  width: 100%;
+}
+.w-half {
+  width: 50%;
+}
+.w-third {
+  width: 33.33%;
+}
+.w-two-third {
+  width: 66.66%;
+}
+.w-one-fourth {
+  width: 25%;
+}
+.w-three-fourth {
+  width: 75%;
+}
+.h-full {
+  height: 100%;
+}
+.h-screen {
+  height: 100vh;
+} 
+.courses-wrapper{
+    gap: 1rem;
+}
+/* Animated */
+main{
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+div{
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: var(blue,white);
+
+}
+div:first-child{
+  background-color: dodgerblue;
+  transform: skew(10deg);
+}
+div:nth-child(2){
+  background-color: yellow;
+  transform: rotateY(180deg);
+}
+div:last-child{
+  background-color: limegreen;
+  transform: rotateZ(90deg);
+}
+div:hover{
+  background-color: midnightblue;
+  /* transition-property: background-color, transform;
+  transition-duration: 2s,3s;
+  transition-delay: 0.5s; */
+  
+  transition: all 2s 0.5s ;
+}
+div:last-child:hover{
+  transform: rotate(180deg);
+}
+.animate{
+  animation-name: sly;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+
+  /* animation: 5s ease-in-out 1s 2 normal forwards sly */;
+}
+
+@keyframes sly {
+  0%{
+    transform: translateX(0);
+  }
+  33%{
+    transform: translateX(600px) rotate(180deg);
+  }
+  66%{
+    transform: translateX(-600px) rotate(-180deg);
+  }
+  100%{
+    transform: translateX(0);
+    background-color: rebeccapurple;
+  }
+}
